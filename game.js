@@ -25,6 +25,7 @@ $(".btn").click(function () {
 });
 
 function nextSequence() {
+  userClickedPattern = [];
   level++;
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
